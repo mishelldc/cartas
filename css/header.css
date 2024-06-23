@@ -1,0 +1,74 @@
+#header {
+    grid-column: 1/9;
+    padding: 0px 5rem;
+    display: grid;
+    grid-template-columns: 13rem 1fr 30rem 15rem;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+    background-color: rgba(255, 192, 203, 0.774);
+}
+.nivel {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nivel .num-nivel {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vidas {
+    display: flex;
+    align-items: center;
+    justify-self: right;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    font-size: 3.5rem;
+}
+.tiempo {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.tiempo .ico_time {
+    padding-top: 0.2em;
+}
+@media (max-width: 378px) {
+    #header {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        padding: 0 1rem;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .nivel {
+        justify-content: center;
+    }
+
+    .nivel .num-nivel {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .vidas {
+        justify-self: center;
+        font-size: 2rem;
+        padding-top: 0;
+    }
+
+    .tiempo {
+        justify-self: center;
+        gap: 0.5rem;
+    }
+    button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,44 @@
+.section_aciertos {
+    grid-column: 2/8;
+    grid-row: 2/3;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.section_aciertos .titulo {
+    width: 15rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section_aciertos .lista {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 378px) {
+    .section_aciertos {
+        grid-template-columns: repeat(2,1fr);
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+
+    .section_aciertos .titulo {
+        width: auto;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .section_aciertos .lista {
+        font-size: 2rem;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
